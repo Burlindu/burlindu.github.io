@@ -1,24 +1,12 @@
-SURF II
+***   README   ***
+SURF II ETC
 
-burlindu.github.io
+Personal & test webspace for Burl C
+SURF II is an internet portal / personal launch page
+It functions like a desktop phone screen, more similar to old Windows phone than anything else
+Different selectors are differentiated by size, shape & colour with simple nesting for categories in a convential manner
 
-Published via instruc at:
-https://docs.github.com/en/pages/quickstart
+SURF II is about 15MB with minimal traffic (basically me)
+It's public; others would be free to use if wanted
+***   README   ***
 
-This is my personal internet launch page
-It's about 15MB total, with low traffic (only me)
-Started as burlcrone.com and than SURF I in simple HTML (2000-2008)
-& then added HTML with device dectrction & CSS
-Allowing square/wide for desktop and tall/narrow for phone screen from one code set
-
-Basic format folder/category boxes and smaller diect links
-Boxes as per Windows Phone aesthetic
-
-While the coding complexity is v low,, teh point is UI interface
-Effective basic HTML5 (static) can make for a better web interface
-
-May upload in separate folders portfolio site and other basic sites (Lauder, mom's launch, etc)
-use of GITHUB started Nov 2024
-Was using University of Toronto Alumni webspace - this disappeared 
-when the uni elected to delete the many (unused, like mine) alumni email addresses
-(said addresses were the security access to free server space)
