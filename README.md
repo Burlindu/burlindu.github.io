@@ -1,7 +1,7 @@
 README
 <br><br>Test site for my links homepage
 <br>Just basic HTML that I figured out how to use in like 2010 and it still seems to work fine
-<br>SURF 1 was pre-HTML5 and pre-phone interfact - so it was wide. So my biggest change was
+<br>SURF 1 was pre-HTML5 and pre-phone interface - so it was wide. So my biggest change was
 <br>(A) switching to CSS and 
 <br>(B) changing the interface so it detects and runs either in desktop square/wide format or on phone in small tall/narrrow format. 
 <br><br>It's like in the old days when THE VERGE was early in rejecting the idea of an app or separate site for phone use and just ran straight HTML5 for a suingle weba dn phoen code/content source
