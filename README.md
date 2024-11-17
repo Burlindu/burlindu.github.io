@@ -4,7 +4,7 @@
 <br>• SURF 1 was pre-HTML5 and pre-phone interface - so it was wide. So my biggest change was
 <br>• (A) switching to CSS and 
 <br>• (B) changing the interface so it detects and runs either in desktop square/wide format or on phone in small tall/narrrow format. 
-<br><br>• It's like in the old days when THE VERGE was early in rejecting the idea of an app or separate site for phone use and just ran straight HTML5 for a suingle web adn phone code/content source
+<br><br>• It's like in the old days when THE VERGE was early in rejecting the idea of an app or separate site for phone use and just ran straight HTML5 for a suingle web and phone code/content source
 <br>• My limited code I've always done in firstpage (Filezilla or something) - I may try the GITHUB interface here?
 <br>• I've been using free server space on the Uni Almuni servers but surprise! Turns out they deleted all the many rarely used alumni email address, and those are the credentials I used for accessing the public Uni server (I expect that limited server room was intended for active students anyway, but nobody ahd bothered to block alumni use)
 <br><br>• So Git hub for me is a test - can I run my landing homepage from here the same way I did from the Uni server?
