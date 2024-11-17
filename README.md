@@ -17,9 +17,8 @@ Boxes as per Windows Phone aesthetic
 While the coding complexity is v low,, teh point is UI interface
 Effective basic HTML5 (static) can make for a better web interface
 
-May upload in separate folders portfolio sitte and other basic sites (Lauder, mom's launch, etc)
+May upload in separate folders portfolio site and other basic sites (Lauder, mom's launch, etc)
 use of GITHUB started Nov 2024
-Was using University of Toronto Alumni webspace - this disappreared 
-
+Was using University of Toronto Alumni webspace - this disappeared 
 when the uni elected to delete the many (unused, like mine) alumni email addresses
 (said addresses were the security access to free server space)
