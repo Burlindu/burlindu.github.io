@@ -1,5 +1,5 @@
 • README
-<br>• Test site for my links homepage
+<br><br>• Test site for my links homepage
 <br>• Just basic HTML that I figured out how to use in like 2010 and it still seems to work fine
 <br>• SURF 1 was pre-HTML5 and pre-phone interface - so it was wide. So my biggest change was
 <br>• (A) switching to CSS and 
