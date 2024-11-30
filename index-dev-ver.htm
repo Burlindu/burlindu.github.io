@@ -17,9 +17,12 @@ body, html { background-image: url('files/trianglify3-DEV-BACK.jpg'); }
 #zone1 { border: 1px solid red; }
 #zone2 { border: 1px solid cyan; }
 #zone3 { border: 1px solid grey; }
+#zone4 { border: 1px solid purple; }
+#zone5 { border: 1px solid olive; }
+#zone6 { border: 1px solid teal; }
 #text { border: 1px solid orange; }
 .text1 { border: 1px solid pink; }
-#zoneback { border: 1px solid green; }
+#zoneback { border: 2px solid green; }
 </style>
 
 </HEAD><BODY>
@@ -38,9 +41,8 @@ body, html { background-image: url('files/trianglify3-DEV-BACK.jpg'); }
 <a href="webdev.htm" class="button work"><span class="font2">F txt zone2</span><img src="images/dev/but1.png" class="badge"></a>
 <a href="social.htm" class="button social"><span class="font2">G BAR LINKS</span><img src="images/dev/but1.png" class="badge"></a>
 
-
-
 </div> <!-- zone 1 close -->
+
 
 <!---- ZONE 2  -  Transparent rectangular direct links ----->
 
@@ -74,9 +76,36 @@ body, html { background-image: url('files/trianglify3-DEV-BACK.jpg'); }
 
 <a href="other.htm" class="button2"><b>. . .</b></a>
 
+</div>
+
+
+<div id ="zone3">
+<b>||| ZONE 3 |||</b>
 <br>
 <br>
-ZONE 2 - for BUTTON2 (clear) (index page only) OR Text (with bar links)
+Is it too wide or not??
+<br>
+<br>
+</div> <!---- ZONE 3 Close ----->
+
+<div id ="zone4">
+<b>||| ZONE 4 |||</b>
+<br>
+<br>
+This zone has more text we se can see how different it looks when the content is wider than the DIV. The short text DIV is not wide enough to fill the container.
+<br>
+<br>
+</div> <!---- ZONE 3 Close ----->
+
+
+<div id="zone5"> 
+
+<br>
+<br>
+<b>||| ZONE 5 |||</b>
+<br>
+<br>
+for BUTTON2 (clear) (index page only) OR Text (with bar links)
 <br>
 <br>
 <span class="regcase">
@@ -91,17 +120,18 @@ To get a line break you have to use [BR]. For a break (next line) AND a line spa
 <br>
 <br>
 
-</div> <!-- ZONE 2 close -->
+</div> <!-- ZONE 5 close -->
 
-<!---- TEXT DIV below the buttons ----->
-<!---- THIS IS THE DIV CAUSING BOTTOM SCOLL BAR !!!!!! ----->
 
-<div id ="text"> 
+
+
+<div id="zone6"> 
 
 <a href="about.htm"><span class="text1 regcase">.text1 BUTTON VIA CLASS in text div</span></a> 
 <br>
 <br>
-TEXT Div - 
+<b>||| ZONE 6 |||</b>
+<br>
 <br>
 for TEXT, .text1 (class) link & BUTTON 3 bar links
 <br>
@@ -127,7 +157,7 @@ However TEXT and ZONEBACK are not
 & so these 2 DIVS are causing a horz scrollbar when the window is narrowed
 <br>
 <br>
-You can see the PINK CONTAINER DIX is narrowing to window size BUT the YELLOW and GREEN (TEXT & ZONEBACK) DIVS are ending up WIDER than the contrainer!
+You can see the PINK CONTAINER DIV is narrowing to window size BUT the YELLOW and GREEN (TEXT & ZONEBACK) DIVS are ending up WIDER than the contrainer!
 <br>
 Hm!
 </span>
@@ -136,17 +166,15 @@ Hm!
 <a href="webdev.htm" class="button3">BUTTON 3  --  TEXT in TRANS BOX</a>
 <br>
 <br>
-</div> <!---- text Close ----->
+
+</div> <!---- zone 6 Close ----->
 
 <!---- ZONEBACK is the triangle button to go back to previous page ----->
 
 <div id="zoneback"> <!---- Zone back ----->
 
 <!-- BACK BUTTON -->
-<a href="webdev.htm" class="button2"><img src="images/surf/back.png" class="badge"></a> 
-ZONEBACK div with BUTTON 2 trans button
-<br>
-Not intended for text (non-stack)
+<a href="webdev.htm" class="button2"><img src="images/surf/back.png" class="badge"></a>
 <!-- BACK BUTTON -->
 
 </div> <!---- Zoneback Close ----->
