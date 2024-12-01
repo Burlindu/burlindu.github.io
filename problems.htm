@@ -33,6 +33,22 @@ Somehow I just have trouble getting teh DIVs to match the phone screen widtha nd
 <br>
 <br><hr>
 - Unwanted horizontal scroll just to the right of the screen edge in phone view
+<br>
+*** FIXED 2024-11 : CHANGED ZONE1 MIN WIDTH TO 21
+<br>
+*** tested by making media-screen max-width 360px (phone size)
+<br>
+*** In DEV mode showed that zone1DIV was overlapping the container on the right
+<br>
+*** zone1 had min-width of 23.5. Manually lowered until fits within 100% container div
+<br>
+*** that resulted in min-width 21em. I don't know why - padding? margins?
+<br>
+*** something to do with the spacing of button1's lined up? I dunno
+<br>
+*** 360px / 16pt = 22.5em so 21 leabes 1.5em unaccounted for
+
+
 <br><hr>
 - Maybe it's be better to have the column all center on the phone in media screen mode?
 <br><hr>
