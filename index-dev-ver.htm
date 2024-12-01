@@ -40,7 +40,7 @@ body, html { background-image: url('files/trianglify3-DEV-BACK.jpg'); }
 <a href="index.htm" class="button home"><span class="font">E index</span><img src="images/dev/but1.png" class="badge"></a>
 <a href="webdev.htm" class="button work"><span class="font">F txt zone2</span><img src="images/dev/but1.png" class="badge"></a>
 <a href="social.htm" class="button social"><span class="font">G BAR LINKS</span><img src="images/dev/but1.png" class="badge"></a>
-<a href="chat.htm" class="button chat"><span class="font2">box 8</span><img src="images/chat/ai.png" class="badge"></a>
+<a href="chat.htm" class="button chat"><span class="font">box 8</span><img src="images/chat/ai.png" class="badge"></a>
 </div> <!-- zone 1 close -->
 
 
@@ -83,7 +83,7 @@ body, html { background-image: url('files/trianglify3-DEV-BACK.jpg'); }
 <b>||| ZONE 3 |||</b>
 <br>
 <br>
-Is it too wide or not??
+Test DIV less content
 <br>
 <br>
 </div> <!---- ZONE 3 Close ----->
@@ -92,82 +92,62 @@ Is it too wide or not??
 <b>||| ZONE 4 |||</b>
 <br>
 <br>
-This zone has more text we se can see how different it looks when the content is wider than the DIV. The short text DIV is not wide enough to fill the container.
+More Content (full line text)
+<br>
+<br>
+<b>index-dev-ver.html</b>
+<br>
+This a dev viewing page
+<br>
+With 1px boxes around the DIVS so we can see the size
+<br>
+<b>NOTE</b> these boxes do add 2px to the div size, so it actually causes 2 px of scrolling in phone view, which goes away in real life when the dev borders are gone
 <br>
 <br>
 </div> <!---- ZONE 3 Close ----->
 
 
 <div id="zone5"> 
-
-<br>
-<br>
 <b>||| ZONE 5 |||</b>
 <br>
 <br>
-for BUTTON2 (clear) (index page only) OR Text (with bar links)
-<br>
+All ZONE DIVS should run on same code (zone1, 2,3 etc)
 <br>
 <span class="regcase">
-Using the regcase class you can make big paragraphs of text in tZONE 2 DIV. It will wrap as shown.
-<br>
-<br>
-To get a line break you have to use [BR]. For a break (next line) AND a line space between paragraphs you use two [BR] in a row in the DIV
+There is also a spanclass for 'regcase', meaning not uppercase
 </span>
 <br>
 <br>
-<a href="webdev.htm" class="button3">BUTTON 3  --  TEXT in TRANS BOX</a>
+<a href="webdev.htm" class="button3">BUTTON 3  --  TEXT in greyed BOX</a>
 <br>
 <br>
-
-</div> <!-- ZONE 5 close -->
-
-
-
-
-<div id="zone6"> 
-
 <a href="about.htm"><span class="text1 regcase">.text1 BUTTON VIA CLASS in text div</span></a> 
 <br>
 <br>
-<b>||| ZONE 6 |||</b>
+Note that .text1 is NOT usually in a box - that's just for this demo page. text1 is a plain text link, like 'ABOUT' at the bottom of the INDEX page
 <br>
 <br>
-for TEXT, .text1 (class) link & BUTTON 3 bar links
-<br>
-<br>
-BOXES:
-<br>
-CONTAINER: pink
-<br>
-ZONE 1: red
-<br>
-ZONE 2: cyan
-<br>
-TEXT DIV: yellow
-<br>
-ZONEBACK DIV: green
-<br>
-<br>
-<span class="regcase">
-*** (regace) - The pronlem is that ZONE 1 and ZONE 2 shrinking down to window size when you narrow;
-<br>
-However TEXT and ZONEBACK are not 
-<br>
-& so these 2 DIVS are causing a horz scrollbar when the window is narrowed
-<br>
-<br>
-You can see the PINK CONTAINER DIV is narrowing to window size BUT the YELLOW and GREEN (TEXT & ZONEBACK) DIVS are ending up WIDER than the contrainer!
-<br>
-Hm!
-</span>
-<br>
-<br>
-<a href="webdev.htm" class="button3">BUTTON 3  --  TEXT in TRANS BOX</a>
-<br>
-<br>
+</div> <!-- ZONE 5 close -->
 
-</div> <!---- zone 6 Close ----->
+<div id="zone6"> 
+
+<b>||| ZONE 6 |||</b><span class="regcase">
+<br>
+<br>
+These DIVs do not have natural padding at the top & bottom - 
+as that might cause issues when I'm using buttons instead of TEXT. 
+So when just puttuin text we put in 2 BREAKS at the bottom for a gap 
+(but none at the top - I guess there is some padding there)
+<br>
+<br>
+<b>NOTE</b> the ZONEBACK botton is in a FIXED div at bottom right >>>>>>>>>>>>
+<br>
+So it floats outside the regular DIV pattern
+<br>
+& causes no problem if sitting outside container
+<br>
+<br>
+</spam></div> <!---- zone 6 Close ----->
 
 <!---- ZONEBACK is the triangle button to go back to previous page ----->
 

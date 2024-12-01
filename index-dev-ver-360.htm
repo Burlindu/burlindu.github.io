@@ -96,81 +96,49 @@ Test DIV less content
 More Content (full line text)
 <br>
 <br>
-NOTE this version has a container MAX WIDTH 360 px - This is a test for phones, which typically use a 360px width standard. I was having a problem with a scroll bar to the right - ZONE 1 was ending up, for some reason, 1.5em wider than teh container! Which this test page would show (since CHROME min is like 500px, so the 360px min-width page shows up in a wider 500px environement
+NOTE this version has a container 
+<br>
+<b>MAX WIDTH 360 px</b>
+<br>
+This is a test for phones, which typically use a 360px width standard. I was having a problem with a scroll bar to the right - ZONE 1 was ending up, for some reason, 1.5em wider than the container! Which this test page would show (since CHROME min is like 500px, so the 360px min-width page shows up in a wider 500px environement
 <br>
 <br>
 </div> <!---- ZONE 3 Close ----->
 
 
 <div id="zone5"> 
-
-<br>
-<br>
 <b>||| ZONE 5 |||</b>
 <br>
 <br>
-for BUTTON2 (clear) (index page only) OR Text (with bar links)
-<br>
+All ZONE DIVS should run on same code (zone1, 2,3 etc)
 <br>
 <span class="regcase">
-Using the regcase class you can make big paragraphs of text in tZONE 2 DIV. It will wrap as shown.
-<br>
-<br>
-To get a line break you have to use [BR]. For a break (next line) AND a line space between paragraphs you use two [BR] in a row in the DIV
+There is also a spanclass for 'regcase', meaning not uppercase
 </span>
 <br>
 <br>
-<a href="webdev.htm" class="button3">BUTTON 3  --  TEXT in TRANS BOX</a>
+<a href="webdev.htm" class="button3">BUTTON 3  --  TEXT in greyed BOX</a>
 <br>
 <br>
-
-</div> <!-- ZONE 5 close -->
-
-
-
-
-<div id="zone6"> 
-
 <a href="about.htm"><span class="text1 regcase">.text1 BUTTON VIA CLASS in text div</span></a> 
 <br>
 <br>
+Note that .text1 is NOT usually in a box - that's just for this demo page. text1 is a plain text link, like 'ABOUT' at the bottom of the INDEX page
+<br>
+<br>
+</div> <!-- ZONE 5 close -->
+
+<div id="zone6"> 
+
 <b>||| ZONE 6 |||</b>
 <br>
 <br>
-for TEXT, .text1 (class) link & BUTTON 3 bar links
+These DIVs do not have natural padding at the top & bottom - 
+as that might cause issues when I'm using buttons instead of TEXT. 
+So when just puttuin text we put in 2 BREAKS at the bottom for a gap 
+(but none at the top - I guess there is some padding there)
 <br>
 <br>
-BOXES:
-<br>
-CONTAINER: pink
-<br>
-ZONE 1: red
-<br>
-ZONE 2: cyan
-<br>
-TEXT DIV: yellow
-<br>
-ZONEBACK DIV: green
-<br>
-<br>
-<span class="regcase">
-*** (regace) - The pronlem is that ZONE 1 and ZONE 2 shrinking down to window size when you narrow;
-<br>
-However TEXT and ZONEBACK are not 
-<br>
-& so these 2 DIVS are causing a horz scrollbar when the window is narrowed
-<br>
-<br>
-You can see the PINK CONTAINER DIV is narrowing to window size BUT the YELLOW and GREEN (TEXT & ZONEBACK) DIVS are ending up WIDER than the contrainer!
-<br>
-Hm!
-</span>
-<br>
-<br>
-<a href="webdev.htm" class="button3">BUTTON 3  --  TEXT in TRANS BOX</a>
-<br>
-<br>
-
 </div> <!---- zone 6 Close ----->
 
 <!---- ZONEBACK is the triangle button to go back to previous page ----->
