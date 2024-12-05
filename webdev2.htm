@@ -20,17 +20,19 @@ body, html { background-image: url('files/trianglify-octocat.png'); }
 <div id="container">
 <span class="regcase">
 
-<div id="zone1"> <!---- Main page of buttons ----->
+<div id="zone1"> <!---- Main page of buttons, no r-pad ----->
 
-<img src="images/dev/site-layout-2021.png" class="imagewidth1">
-<br><br>
-Above is any early DIV plan - since cleaned up
 
+(below) Early DIV plan - since cleaned up 
 <br><br>
-<img src="images/dev/site-colours-surf2.png" class="imagewidth1">
-<br><br>
-<img src="images/dev/1.jpg" class="imagewidth1">
-<br><br>
+
+<img src="images/dev/site-layout-2021.png" class="w100 imgspace">
+
+<img src="images/dev/site-colours-surf2.png" class="w100 imgspace">
+
+<div id="zone2"> <!---- reg div with r-pad ----->
+
+
 RED is ZONE 1
 <br>
  -- BUTTON1 inside - category links
@@ -44,28 +46,37 @@ GREEN is TEXT
 GREEN LINKS are TEXT1
 <br>
 WHITE triangle is ZONEBACK (back button)
+<br><br>
+Since updated:
+<br>
+Now ZONE 1 has no right padding (so main box buttons can fill the width)
+<br>
+All sunsequent ZONES (2,3,4, etc) are all identical, having some right-padding<br>
+*** might want new better code here - I have a series of 'identical' DIV's (2+) which maybe should really be DIV CLASSES? I don't know, have not really used DIV CLASSES, so will stick with 'dirty' code with a string of same DIV ID's
+<br>
+<br>
+The DIVs should STACK - not nested - unless (in a page like this one) we want images (ZONE 1 - NO R-PADDING) with text in the middle (ZONE 2+, R-PADDING), in which case Z2+ are nested inside Z1 so after the text the page returns to full width for images.
+<br><br>
+So I added the DEV VER & DEC 360 pages which show live BORDERS on the live DIVS, more up to date than teh screenshots on this page
 <br><br><br>
-<img src="images/dev/2.jpg" class="imagewidth1">
 
-<img src="images/dev/3.jpg" class="imagewidth1">
 
-<img src="images/dev/4.jpg" class="imagewidth1">
+</div> <!---- Zone 2 Close - a text interlude ----->
 
-<img src="images/dev/5.jpg" class="imagewidth1">
+<img src="images/dev/1.jpg" class="w100 imgspace">
 
-<img src="images/dev/6.jpg" class="imagewidth1">
+<img src="images/dev/2.jpg" class="w100 imgspace">
+
+<img src="images/dev/3.jpg" class="w100 imgspace">
+
+<img src="images/dev/4.jpg" class="w100 imgspace">
+
+<img src="images/dev/5.jpg" class="w100 imgspace">
+
+<img src="images/dev/6.jpg" class="w100 imgspace">
 
 </span>
 </div> <!---- Zone 1 Close ----->
-
-
-<div id="zone2">
-<span class="regcase">
-
-
-
-</span> <!---- ending regcase - return to uppercase ----->
-</div>  <!---- END text in ZONE 2 ----->
 
 
 <div id="zoneback"> <!---- Zone back ----->
