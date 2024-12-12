@@ -1,0 +1,12 @@
+
+
+Layout 2 is just if I'm making big test changes to css
+
+Take the page that is being tested
+make a copy of LAYOUT called LAYOUT2
+redirect the HTL page to use LAYOUT2 instead of LAYOUT for CSS
+Make the test
+
+If it works good, you can replace LAYOUT with the new LAYOUT2 code
+and make the HTML go back to getting CSS from LAYOUT
+
