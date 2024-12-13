@@ -32,7 +32,73 @@ Somehow I just have trouble getting teh DIVs to match the phone screen widtha nd
 <br>
 <br>
 <br><hr>
-(P1)
+
+
+(P6)
+<br>
+FORWARD BACKWARD BUTTON SIZE IN THE JAVA SLIDESHOW
+<br>
+Current problem is that I replaced the physical FORWARD and BACK buttons in the imported code (JAVE, CSS & HTML) for the image slideshow in ABOUT3. 
+<br>
+My massaged code works great except when I narrow the window to phone view (say under 500, down to say 360px) the now-transparent FWD BK buttons are too tall. 
+<br>
+They made the DIV nesting and other code I don't recognize, so I need to fool aroujd a while (new nesting DIV's? A new DIV just for the image so if teh button height is 100% it doesn't cover the content below?? OR **** maybe I just Z-INDEX to put the clean buttons begomd the IMAGE DOT selectors and then the problem sort of solves itself? Hmmmm.....)
+<br><hr>
+
+
+(P5)
+<br>
+NOTE ON ADDING A SLIDESHOW
+<br>
+I used W3C to make a slideshow of pics for ABOUT3
+<br>
+It provides CSS, HTML and some JAVA
+<br>
+Typically, it said to 'just add' these without saying how
+<br>
+The CSS I originally added in a layout2-css file but since it's just for one page I switched to embed it at the top of the HTML in ABOUT3
+<br>
+The JAVA is out-rigged in a JS file. This worked great but the code failed because it refused to load an image in the slideshow on start-up. Turns out the insertion of the first image occurs in the JAVA & I was loading that BEFORE the CSS. So I just moved the JSS load to the very bottom of the ABOUT3 HTML and now works correct - JS HAS TO LOAD AFTER THE CSS
+<br><hr>
+
+
+(P4)
+<br>
+BOX PROBLEM - found 'bew' code when adding JAVA in ABOUT3
+<br>
+NEW CODE (include the astrex): 
+<br>
+* { box-sizing: border-box }
+<br><br>
+Sets box-sizing:border box for ALL elements - this means boader and padding will be included in element size, instead of added. This is a 'new' W3C thing I have not used before as my coding is out of date. So instead of haveing to recalcultae your DIV size with every change in AMRGIN & PADDING, there 2 become included in DIV SIZE. 
+<br>
+NOTE - I did not yet institute this across site as I'd have to revise lots of CSS. Also I REMOVED it from my imported slideshow JAVA/CSS because I use % left-padding in large windows and thsi made the DIV get smaller as you widened the window! Because in the old system teh div size stays the same even when padding goes up (as is deived from percent of window width). In the 'new' system the DIV size would minus out the ever-inceasing padding, as so shrink as the window gets bigger. So in that case the old box-system is better (ish).
+<br><hr>
+
+
+(P3)
+<br>
+- I also get a bit of wrap or text over-run on that right side in phone view
+<br>
+*** I'll check, assume this has been fixed with fix1 below
+<br>
+FIXED
+<br>
+There were 2 causes of this - the first I think was a box size problems - margins) in ZONE 1 and then later when I added a bit fo JAVA in ABOUT3 it imported a text line with 100% - which, when box issues were added, punched width over 100% (ie margin-left 1em)
+<br>
+ALSO SEE P4 ABOVE
+<br><hr>
+
+
+
+(P2)
+<br>
+- Maybe it's be better to have the column all center on the phone in media screen mode?
+<br><hr>
+
+
+
+(P3)
 <br>
 - Unwanted horizontal scroll just to the right of the screen edge in phone view
 <br>
@@ -49,19 +115,10 @@ Somehow I just have trouble getting teh DIVs to match the phone screen widtha nd
 *** something to do with the spacing of button1's lined up? I dunno
 <br>
 *** 360px / 16pt = 22.5em so 21 leabes 1.5em unaccounted for
+<br><hr>
 
 
-<br><hr>
-(P2)
-<br>
-- Maybe it's be better to have the column all center on the phone in media screen mode?
-<br><hr>
-(P3)
-<br>
-- I also get a bit of wrap or text over-run on that right side in phone view
-<br>
-*** I'll check, assume this has been fixed with fix1 above
-<br><hr>
+
 <br>
 <br>
 <br>
