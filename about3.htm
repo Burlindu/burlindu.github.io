@@ -37,18 +37,14 @@ body, html { background-image: none; background-color: #4a4948; }
   height: 495px;
   transition: 0.2s ease;
   user-select: none;
-  border: 1px solid red;
+  background-color: red; 
+  opacity : 0.5;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 1em;
 }
-
-/* On hover, add a black background color with a little bit see-through 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.1);
-} */
 
 /* Caption text */
 .text {
@@ -69,6 +65,9 @@ body, html { background-image: none; background-color: #4a4948; }
   display: inline-block;
   transition: background-color 0.1s ease;
   user-select: none;
+  position: relative;
+  Z-Index: 2;
+  
 }
 
 .active, .dot:hover {
