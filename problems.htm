@@ -53,6 +53,15 @@ Current problem is that I replaced the physical FORWARD and BACK buttons in the 
 My massaged code works great except when I narrow the window to phone view (say under 500, down to say 360px) the now-transparent FWD BK buttons are too tall. 
 <br>
 They made the DIV nesting and other code I don't recognize, so I need to fool aroujd a while (new nesting DIV's? A new DIV just for the image so if teh button height is 100% it doesn't cover the content below?? OR **** maybe I just Z-INDEX to put the clean buttons begomd the IMAGE DOT selectors and then the problem sort of solves itself? Hmmmm.....)
+<br>
+<br>
+The problem - the SLIDESHOW is in the SLIDESHOW-CONTAINER DIV - both the image and the buttons below it
+<br>
+The buttons are in the SLIDESHOW-COMTAINER DIV and above the IMAGE DIVS (CLASS) - so if set to 100% it's the full height of the images and buttons, not just the image. So I either set the buttons behind using Z-INDEX, which just seems sloppy, or I sort out the DIV (CLASS) nesting so the buttons are with the image and not the whole show-container. 
+<br><br>
+SOLUTION
+<br>
+I think I'll try just the Z-INDEX first, because although it just seem like bad coding would make a sad, sloppy DIV diagram, it has the advnatage of being able to advance the images without having the mouse pointer on the image (and also allows cleaer code without an exception of MEDIA-SCREEN just for the slideshow)
 <br><hr>
 
 
