@@ -34,10 +34,10 @@ body, html { background-image: none; background-color: #4a4948; }
   cursor: pointer;
   position: absolute;
   width: 30%;
-  height: 70%;
+  height: 495px;
   transition: 0.2s ease;
   user-select: none;
-  border: 0px solid red;
+  border: 1px solid red;
 }
 
 /* Position the "next button" to the right */
@@ -78,6 +78,11 @@ body, html { background-image: none; background-color: #4a4948; }
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media only screen and (max-width: 42em) 
+{
+.prev, .next { height: 450px; }
 }
 
 /* ------ SLIDESHOW CSS from W3C for About3 page 2024   ----- */
@@ -336,9 +341,6 @@ www.w3schools.com/howto/howto_js_slideshow.asp ------------->
   <span class="dot" onclick="currentSlide(36)"></span>
   <span class="dot" onclick="currentSlide(37)"></span>
 </div>
-
-
-
 
 
 </div> <!---- Zone 2 Close ----->
