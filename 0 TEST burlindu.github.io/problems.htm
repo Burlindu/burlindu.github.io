@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- to prevent phone browser from zooming=======================-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- to prevent phone browser from zooming=======================-->
+<link rel="shortcut icon" href="ico/ico_home.ico">
+<link rel="STYLESHEET" href="files/layout.css" type="text/css">
+<title>Surf III</title>
+
+<style>
+body, html { background-image: url('files/trianglify-octocat.png'); }
+</style>
+
+
+</HEAD><BODY>
+
+<!--------------- container ------------->
+<div id="container">
+
+<div class="zoneclass"> <!--- ZC --->
+<span class="regcase">
+
+<b>CURRENT SITE CODE PROBS</b>
+<br>
+I like the spacing/location of the main page - not centered but left-justified some ways from the window edge. BUT - in phone view the move to furthur left usually has some issues.
+<br>
+Somehow I just have trouble getting teh DIVs to match the phone screen widtha nd provide an em or two padding on the right. Which should be well, pretty easy and basic. Ha ha Ha
+<br>
+<br>
+<br><hr>
+
+(P8)
+<br>
+DIV CLASS - Starting to implement
+<br>
+Repalcing the ZONE 2+ with class ZONECLASS is not working right
+<br>
+The Padding is not There
+<br>
+It might be because the DIV ID code takes prescidence over the class code?
+<br>
+So that the padding in the contained ID is negating the ZONECLASS padding?
+<br>
+That just does not seem right, I'll have to sort & test.
+<br>
+<br>
+<b>SOLUTION</b>
+<br>
+Oh you dummer I renamed it DIVCLASS from ZONE 2 but forgot to change the letters ID to CLASS. You dummy. It had nothing to do with the CONTAINER ID code over-writting the DIVCLASS code.
+<br><hr>
+
+(P7)
+<br>
+DIV CLASS
+<br>
+I note that the new code for the JAVA slideshow also used DIV CLASSES instead of DIV IDs
+<br>
+I know this is an old fault in my code - I just use/used DIV IDs - so I ended making a whole but of 'unique' DIV ID's - Zone 2,3,4,5 etc with identical code. I like identical code - but I should be using DIV CLASSES instead because that's for non-unique DIVS - you can have 5 consecutive DIV CLASSES of the same name without triggering a code error alert
+<br><hr>
+
+
+(P6)
+<br>
+FORWARD BACKWARD BUTTON SIZE IN THE JAVA SLIDESHOW
+<br>
+Current problem is that I replaced the physical FORWARD and BACK buttons in the imported code (JAVE, CSS & HTML) for the image slideshow in ABOUT3. 
+<br>
+My massaged code works great except when I narrow the window to phone view (say under 500, down to say 360px) the now-transparent FWD BK buttons are too tall. 
+<br>
+They made the DIV nesting and other code I don't recognize, so I need to fool aroujd a while (new nesting DIV's? A new DIV just for the image so if teh button height is 100% it doesn't cover the content below?? OR **** maybe I just Z-INDEX to put the clean buttons begomd the IMAGE DOT selectors and then the problem sort of solves itself? Hmmmm.....)
+<br>
+<br>
+The problem - the SLIDESHOW is in the SLIDESHOW-CONTAINER DIV - both the image and the buttons below it
+<br>
+The buttons are in the SLIDESHOW-COMTAINER DIV and above the IMAGE DIVS (CLASS) - so if set to 100% it's the full height of the images and buttons, not just the image. So I either set the buttons behind using Z-INDEX, which just seems sloppy, or I sort out the DIV (CLASS) nesting so the buttons are with the image and not the whole show-container. 
+<br><br>
+SOLUTION
+<br>
+I think I'll try just the Z-INDEX first, because although it just seem like bad coding would make a sad, sloppy DIV diagram, it has the advnatage of being able to advance the images without having the mouse pointer on the image (and also allows cleaer code without an exception of MEDIA-SCREEN just for the slideshow)
+<br><br>
+SOLUTION FAIL?
+<br>
+Looks like the default POSITION of these elements is STATIC (all default) & Z-IDEX only works if position is like relative or absolute etc. I don't think I want to mess with that. Hmmmmm
+<br> MAYBE it's as simple as making a new DIV for the BUTTONS and putting it on top. But the damn key is having that BOX resize with the image (which is why you just want an image DIV with the buttons inside it, not a BUTTONS DIV
+<br>
+SO...... maybe a DIV for the target button cloud instead, and just Z-INDEX that! (& add positioning....)
+<br>
+WORKED! Wow so simple
+<br>
+and YES I like having too-tall buttons - good to be able to advance slide without mouse curser on top of image
+<br><hr>
+
+
+(P5)
+<br>
+NOTE ON ADDING A SLIDESHOW
+<br>
+I used W3C to make a slideshow of pics for ABOUT3
+<br>
+It provides CSS, HTML and some JAVA
+<br>
+Typically, it said to 'just add' these without saying how
+<br>
+The CSS I originally added in a layout2-css file but since it's just for one page I switched to embed it at the top of the HTML in ABOUT3
+<br>
+The JAVA is out-rigged in a JS file. This worked great but the code failed because it refused to load an image in the slideshow on start-up. Turns out the insertion of the first image occurs in the JAVA & I was loading that BEFORE the CSS. So I just moved the JSS load to the very bottom of the ABOUT3 HTML and now works correct - JS HAS TO LOAD AFTER THE CSS
+<br><hr>
+
+
+(P4)
+<br>
+BOX PROBLEM - found 'bew' code when adding JAVA in ABOUT3
+<br>
+NEW CODE (include the astrex): 
+<br><br>
+* { box-sizing: border-box }
+<br><br>
+Sets box-sizing:border box for ALL elements - this means border and padding will be included in element size, instead of added. This is a 'new' W3C thing I have not used before as my coding is out of date. So instead of haveing to recalculate your DIV size with every change in MARGIN & PADDING, these 2 become included in DIV SIZE. 
+<br>
+NOTE - I did not yet institute this across site as I'd have to revise lots of CSS. Also I REMOVED it from my imported slideshow JAVA/CSS because I use % left-padding in large windows and thsi made the DIV get smaller as you widened the window! Because in the old system teh div size stays the same even when padding goes up (as is deived from percent of window width). In the 'new' system the DIV size would minus out the ever-inceasing padding, as so shrink as the window gets bigger. So in that case the old box-system is better (ish).
+<br><hr>
+
+
+(P3)
+<br>
+- I also get a bit of wrap or text over-run on that right side in phone view
+<br>
+*** I'll check, assume this has been fixed with fix1 below
+<br>
+FIXED
+<br>
+There were 2 causes of this - the first I think was a box size problems - margins) in ZONE 1 and then later when I added a bit fo JAVA in ABOUT3 it imported a text line with 100% - which, when box issues were added, punched width over 100% (ie margin-left 1em)
+<br>
+ALSO SEE P4 ABOVE
+<br><hr>
+
+
+
+(P2)
+<br>
+- Maybe it's be better to have the column all center on the phone in media screen mode?
+<br><hr>
+
+
+
+(P3)
+<br>
+- Unwanted horizontal scroll just to the right of the screen edge in phone view
+<br>
+*** FIXED 2024-11 : CHANGED ZONE1 MIN WIDTH TO 21
+<br>
+*** tested by making media-screen max-width 360px (phone size)
+<br>
+*** In DEV mode showed that zone1DIV was overlapping the container on the right
+<br>
+*** zone1 had min-width of 23.5. Manually lowered until fits within 100% container div
+<br>
+*** that resulted in min-width 21em. I don't know why - padding? margins?
+<br>
+*** something to do with the spacing of button1's lined up? I dunno
+<br>
+*** 360px / 16pt = 22.5em so 21 leabes 1.5em unaccounted for
+<br><hr>
+
+
+
+<br>
+<br>
+<br>
+<hr><hr>
+<b>NOTES</b>
+<br>
+I've been straight HTML since like 2000 ish?
+<br>
+(When I was working at startup wireless ISP Maxlink (28 GHz LMCS Spectrum Licences))
+<br>
+So I started pre-CSS and switched to css say 2006ish? And liquid formats after 2008ish?
+<br>
+<br>
+<a href="https://ised-isde.canada.ca/site/spectrum-management-telecommunications/en/local-multipoint-communications-systems-28-ghz-archived-documents
+" class="button3">Death of Maxlink, 2001</a>
+<br>
+<br>
+But really it's just an occassional hobby, meaning my code is basic. I still end up with hilariously simple problems like spacing and margin (and wrap-around) problems, particularly when my css goes from normal view to 'media screen' width.
+<br>
+<br>
+I don't want to use a template or a code-fixer program. I just want my HTMl on Notepad++ or similar.
+<br>
+<br>
+So here I'll list problems I've had or am having, which may still be live problems since it's just my own recreational site and I have no external users to answer to............
+<br>
+<br>
+I could also note that even my basic launch pad site, simple as it is, is now like 1,700 files (but only 28MB). That's what happens when you evolve one page for like 25 years, even if your 'coding skills' move very little over that time.........
+<br>
+<br>
+<br>
+<br>
+
+</span> <!---- ending regcase - return to uppercase ----->
+</div>  <!---- END text in ZC ----->
+
+
+<div id="zoneback"> <!---- Zone back ----->
+<!-- BACK BUTTON -->
+<a href="webdev.htm" class="button2"><img src="images/surf/back.png" class="badge"></a> 
+<!-- BACK BUTTON -->
+</div> <!---- Zoneback Close ----->
+
+
+</div></body></html>
+
