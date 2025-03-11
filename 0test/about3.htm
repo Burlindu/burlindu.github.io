@@ -5,108 +5,21 @@
 <!-- to prevent phone browser from zooming=======================-->
 <link rel="shortcut icon" href="ico/ico_home.ico">
 <link rel="STYLESHEET" href="files/layout.css" type="text/css">
+<link rel="STYLESHEET" href="files/slideshow-css.css" type="text/css">
 
 <title>Surf III</title>
-
-<style>
-body, html { background-image: none; background-color: #4a4948; }
-
-
-/* ------ SLIDESHOW CSS from W3C for About3 page 2024   ----- */
-
-<!----* { box-sizing: border-box } ----->
-<!---- sets box-sizing:border box for ALL elements - this means boader and padding will be included in element size, instead of added. This is a 'new' W3C thing I have not used before as my coding is out of date ----->
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  width: 30%;
-  height: 100%;
-  transition: 0.2s ease;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 1em;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  padding: 1em;
-  width: 80%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 1em;
-  width: 1em;
-  margin: 0 0.4em 1em 0.4em;
-  background-color: #222;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.1s ease;
-  user-select: none;
-  position: relative;
-  Z-Index: 2;
-  
-}
-
-.active, .dot:hover {
-  background-color: #999;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* ------ at 360 wide image height is about 285px ----- */
-/* ------ but in narrow chrome view that's only about half height, needs 465 ----- */
-/* ------ SLIDESHOW CSS from W3C for About3 page 2024   ----- */
-
-
-</style>
 
 </HEAD><BODY>
 
 <!--------------- container ------------->
 <div id="container">
 
-
-<!--------------- THIS IS A TEST OF USING
-SOME W3C SCHOOLS CODE TO MAKE AN IMAGE SHOW PAGE WITH BUTTONS
-I WANT DEAD SIMPLE CIODE FOR A GOOD INTERFACE
-WE SHALL SEE. CODE FROM: 
-www.w3schools.com/howto/howto_js_slideshow.asp ------------->
-
-
+ 
 <div class="zoneclasswide"><!---- ZCW ----->
-
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)"></a>
-  <a class="next" onclick="plusSlides(1)"></a>
-  
   <!-- Full-width images with caption text -->
   <div class="mySlides">
     <img src="images/burl/bc1.jpg" style="width:100%">
@@ -340,10 +253,20 @@ www.w3schools.com/howto/howto_js_slideshow.asp ------------->
   <span class="dot" onclick="currentSlide(37)"></span>
   <span class="dot" onclick="currentSlide(38)"></span>
 
+<br><br><br><br><br>
+
+
+<div class="zoneclasswide"><!---- ZCW ----->
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)"><img src="images/surf/square-back.png" class="w100"></a>
+  <a class="next" onclick="plusSlides(1)"><img src="images/surf/square-fwd.png" class="w100"></a>
+ </div><!---- ZCW ----->
+
+
 </div>
 
 
-</div> <!---- Zone 2 Close ----->
+</div> <!---- ZC Close ----->
 
 
 <div id="zoneback"> <!---- Zone back ----->
